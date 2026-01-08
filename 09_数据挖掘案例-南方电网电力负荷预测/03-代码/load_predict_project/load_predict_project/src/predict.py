@@ -160,3 +160,7 @@ if __name__ == '__main__':
     pred_obj.logfile.info(f"模型对新数据进行预测的平均绝对误差：{mae_score}")
     # 5.2绘制折线图，查看预测效果
     prediction_plot(evaluate_df)
+    
+linux-cachyos-lts       linux-cachyos-lts-headers      linux-cachyos-lts-nvidia-open   linux-cachyos      linux-cachyos-headers      linux-cachyos-nvidia-open 
+
+   
