@@ -118,7 +118,7 @@ def train(train_dataset):
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
     # 5. 循环遍历epoch, 开始 每轮的 训练动作.
     # 5.1 定义变量, 记录训练的总轮数.
-    epochs = 20
+    epochs = 100
     # 5.2 遍历, 完成每轮的 所有批次的 训练动作.
     for epoch_idx in range(epochs):
         # 5.2.1 定义变量, 记录: 总损失, 总样本数据量, 预测正确样本个数, 训练(开始)时间
@@ -209,7 +209,7 @@ if __name__ == '__main__':
     # summary(model, (3, 32, 32), batch_size=1)
 
     # 3. 模型训练.
-    # train(train_dataset)
+    train(train_dataset)
 
     # 4. 模型测试.
     evaluate(test_dataset)
